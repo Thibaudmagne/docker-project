@@ -1,0 +1,9 @@
+FROM node:latest
+
+WORKDIR /api
+
+COPY . .
+
+ENV PORT =666
+
+CMD npm install && node server.js
